@@ -1,8 +1,21 @@
 /* AD PLACEHOLDERS - Can be removed from production */
 .ad-placeholder {
-  background-color: olive;
+  background-color: #95a5a6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
 .leaderboard {
   width: 728px;
   height: 90px;
+}
+.medium-rectangle {
+  width: 300px;
+  height: 250px;
+}
+.3x1-rectangle {
+  width: 300px;
+  height: 100px;
 }
