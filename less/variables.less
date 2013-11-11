@@ -6,6 +6,21 @@
 // Global values
 // --------------------------------------------------
 
+// UI Colors
+// -------------------------
+
+@clouds: #ecf0f1;
+@silver: #bdc3c7;
+@concrete: #95a5a6;
+@asbestos: #7f8c8d;
+@wet-asphalt: #34495e;
+@midnight-blue: #2c3e50;
+
+@pomegranate: #c0392b;
+@alizarin: #e74c3c;
+@belize: #2980b9;
+
+
 // Grays
 // -------------------------
 
@@ -18,7 +33,7 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
+@brand-primary:         @belize;
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
@@ -33,13 +48,13 @@
 // Links
 // -------------------------
 
-@link-color:            @brand-primary;
+@link-color:            @belize;
 @link-hover-color:      darken(@link-color, 15%);
 
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -247,7 +262,7 @@
 // Padding, to be divided by two and applied to the left and right of all columns
 @grid-gutter-width:         30px;
 // Point at which the navbar stops collapsing
-@grid-float-breakpoint:     @screen-sm-min;
+@grid-float-breakpoint:     @screen-md-min;
 
 
 // Navbar
@@ -256,20 +271,20 @@
 // Basics of a navbar
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-border-radius:             @border-radius-base;
+@navbar-border-radius:             0px;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 @navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
-@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-bg:                #FFFFFF;
+@navbar-default-border:            @silver;
 
 // Navbar links
-@navbar-default-link-color:                #777;
-@navbar-default-link-hover-color:          #333;
-@navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-color:                #333;
+@navbar-default-link-hover-color:          #FFF;
+@navbar-default-link-hover-bg:             @pomegranate;
+@navbar-default-link-active-color:         #FFF;
+@navbar-default-link-active-bg:            @pomegranate;
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -503,12 +518,12 @@
 // -------------------------
 @panel-bg:                    #fff;
 @panel-inner-border:          #ddd;
-@panel-border-radius:         @border-radius-base;
+@panel-border-radius:         0;
 @panel-footer-bg:             #f5f5f5;
 
 @panel-default-text:          @gray-dark;
-@panel-default-border:        #ddd;
-@panel-default-heading-bg:    #f5f5f5;
+@panel-default-border:        @silver;
+@panel-default-heading-bg:    @clouds;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
@@ -615,7 +630,7 @@
 // -------------------------
 
 // Hr border color
-@hr-border:                   @gray-lighter;
+@hr-border:                   @silver;
 
 // Horizontal forms & lists
 @component-offset-horizontal: 180px;

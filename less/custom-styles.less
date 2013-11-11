@@ -1,16 +1,7 @@
-.rounded-corners (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-	-ms-border-radius: @radius;
-	-o-border-radius: @radius;
-	border-radius: @radius;
-}
-
 /* AD PLACEHOLDERS - Can be removed from production */
 
 .ad-placeholder {
 	background-color: #95a5a6;
-	.rounded-corners(3px);
 }
 
 .leaderboard {
@@ -23,7 +14,150 @@
 	height: 250px;
 }
 
-.3x1-rectangle {
+.three-by-one {
 	width: 300px;
 	height: 100px;
+}
+
+.panel-heading-ad {
+	width: 320px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+/* OTHER PLACEHOLDERS - Can be removed from production */
+
+.ndn-inline-590 { 
+	width: 590px;
+	height: 200px;
+}
+
+.ndn-inline-300 {
+	width: 300px;
+	height: 250px;
+}
+
+/* MASTHEAD STYLES */
+
+.top-links {
+	border-bottom: 1px solid @silver;
+	padding: 5px 0px;
+}
+
+.cust-main-nav-links {
+	font-weight: 600;
+}
+
+// FRONTPAGE PANELS
+// --------------------
+
+.cust-col-main, .cust-col-sidebar {
+	float: left;
+}
+
+
+@media (min-width: @screen-sm-min) {
+	.main-cont .cust-col-main {
+	width: (@screen-sm - 360);
+	}
+	
+	.main-cont .cust-col-sidebar {
+		width: 330px;
+	}
+}
+
+@media (min-width: @screen-md-min) {
+	.main-cont .cust-col-main {
+	width: (@screen-md - 360);
+	}
+	
+	.main-cont .cust-col-sidebar {
+		width: 330px;
+	}
+}
+
+@media (min-width: @screen-lg-min) {
+	.main-cont .cust-col-main {
+	width: (@screen-lg - 360);
+	}
+	
+	.main-cont .cust-col-sidebar {
+		width: 330px;
+	}
+}
+
+.cust-frontpage-sections .panel-heading {
+	min-height: 50px;
+}
+
+.cust-section-head {
+	padding-top: 5px;
+	margin: 0;
+}
+
+// SIDEBAR
+// --------------------
+
+.main-sidebar {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+// SEARCH BAR COLLAPSE
+// --------------------
+
+.search-collapse {
+  overflow-x: visible;
+  .clearfix();
+  -webkit-overflow-scrolling: touch;
+
+  &.in {
+    overflow-y: auto;
+  }
+
+  @media (min-width: @screen-sm) {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+
+    &.collapse {
+      display: block !important;
+      height: auto !important;
+      padding-bottom: 0; // Override default setting
+      overflow: visible !important;
+    }
+
+    &.in {
+      overflow-y: auto;
+    }
+
+    // Account for first and last children spacing
+    .navbar-nav.navbar-left:first-child {
+      margin-left: -@navbar-padding-horizontal;
+    }
+    .navbar-nav.navbar-right:last-child {
+      margin-right: -@navbar-padding-horizontal;
+    }
+    .navbar-text:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.search-toggle {
+  position: relative;
+  
+  @media (min-width: @screen-sm) {
+    display: none;
+  }
+}
+
+
+// RANDOM STUFF
+// --------------------
+
+.cust-relative {
+	position: relative;
 }

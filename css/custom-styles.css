@@ -1,11 +1,7 @@
+/* COLORS */
 /* AD PLACEHOLDERS - Can be removed from production */
 .ad-placeholder {
   background-color: #95a5a6;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
 }
 .leaderboard {
   width: 728px;
@@ -15,7 +11,51 @@
   width: 300px;
   height: 250px;
 }
-.3x1-rectangle {
+.three-by-one {
   width: 300px;
   height: 100px;
+}
+.panel-heading-ad {
+  width: 320px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+/* OTHER PLACEHOLDERS - Can be removed from production */
+.ndn-inline-590 {
+  width: 590px;
+  height: 200px;
+}
+.ndn-inline-300 {
+  width: 300px;
+  height: 250px;
+}
+/* MASTHEAD STYLES */
+.top-links {
+  border-bottom: 1px solid #bdc3c7;
+  padding: 5px 0px;
+}
+.cust-main-nav-links {
+  font-weight: 600;
+}
+.main-cont .col-md-8 {
+  width: 662px;
+}
+.main-cont .col-md-4 {
+  width: 330px;
+}
+.cust-frontpage-sections .panel-heading {
+  min-height: 50px;
+}
+.cust-section-head {
+  padding-top: 5px;
+  margin: 0;
+}
+.main-sidebar {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.cust-relative {
+  position: relative;
 }

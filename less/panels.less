@@ -7,9 +7,8 @@
 .panel {
   margin-bottom: @line-height-computed;
   background-color: @panel-bg;
-  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   border-radius: @panel-border-radius;
-  .box-shadow(0 1px 1px rgba(0,0,0,.05));
 }
 
 // Panel contents
@@ -94,6 +93,8 @@
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
+  position: relative;
+  font-weight: 600;
   .border-top-radius(@panel-border-radius - 1);
 
   > .dropdown .dropdown-toggle {

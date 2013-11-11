@@ -12,12 +12,13 @@
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
-  border: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
   .clearfix();
 
-  @media (min-width: @grid-float-breakpoint) {
+  @media (min-width: @screen-xs) {
     border-radius: @navbar-border-radius;
   }
 }
@@ -175,7 +176,6 @@
 
 .navbar-toggle {
   position: relative;
-  float: right;
   margin-right: @navbar-padding-horizontal;
   padding: 9px 10px;
   .navbar-vertical-align(34px);
@@ -209,8 +209,8 @@
   margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
   > li > a {
-    padding-top:    10px;
-    padding-bottom: 10px;
+    padding-top:    5px;
+    padding-bottom: 5px;
     line-height: @line-height-computed;
   }
 
@@ -239,7 +239,7 @@
   }
 
   // Uncollapse the nav
-  @media (min-width: @grid-float-breakpoint) {
+  @media (min-width: @screen-xs) {
     float: left;
     margin: 0;
 
