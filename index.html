@@ -47,7 +47,7 @@
 		</div><!--/row-->
 		
 		<div class="row">
-			<div class="col-xs-12 col-sm-push-7 col-sm-5 col-md-push-8 col-md-4">
+			<div class="col-xs-12 col-sm-push-7 col-sm-5 col-md-push-8 col-md-4 cust-search-area">
 				<button type="button" class="btn btn-primary search-toggle" data-toggle="collapse" data-target="#collapsed-search">
 						<span>Search</span>
 						<i class="fa fa-search"></i>
@@ -56,9 +56,13 @@
 					<form role="form" class="form-inline">
 						<div class="form-group">
 							<label class="sr-only" for="header-search">Search</label>
-							<input type="search" class="form-control" id="header-search" placeholder="Search">
+							<div class="input-group">
+								<input type="text" class="form-control" id="header-search" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="submit">Go <i class="fa fa-angle-double-right"></i></button>
+								</span>
+							</div>
 						</div>
-						<button type="submit" class="btn btn-primary">Search</button>
 					</form>
 					<div class="panel panel-default">
 						<div class="ad-placeholder panel-body">
