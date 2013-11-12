@@ -139,8 +139,18 @@
 /* MASTHEAD STYLES */
 
 .top-links {
+	border-top: transparent;
 	border-bottom: 1px solid @silver;
-	padding: 5px 0px;
+	padding: 10px 0px;
+	font-size: 12px;
+	
+	@media (min-width: @screen-md-min) {
+		border-top: 1px solid @silver;
+	}
+	
+	@media (min-width: @screen-sm-min) {
+		font-size: 14px;
+	}
 }
 
 .cust-main-nav-links {
@@ -243,13 +253,7 @@
   }
 }
 
-.search-toggle {
-  position: relative;
-  
-  @media (min-width: @screen-sm) {
-    display: none;
-  }
-}
+
 
 
 // RANDOM STUFF
