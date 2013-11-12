@@ -5434,6 +5434,9 @@ td.visible-print {
 .ad-placeholder {
   background-color: #95a5a6;
 }
+.masthead-weather-block {
+  background-color: none;
+}
 .cust-search-area form {
   margin: 5px 0px;
 }
