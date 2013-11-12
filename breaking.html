@@ -26,11 +26,14 @@
 		<div class="row hidden-xs">
 			<div class="col-md-9 col-sm-12 col-lg-8">
 				<div class="ad-placeholder leaderboard">
-					<h3>Leaderboard <span class="label label-primary">728x90</span></h3>
+					<img src="http://placehold.it/728x90">
 				</div>
 			</div>
 			<div class="col-md-3 col-lg-4 hidden-sm">
-				<h3>Weather</h3>
+				<div class="masthead-weather-block text-right">
+					<h1>45&deg;</h1>
+					<p>Cloudy</p>
+				</div>
 			</div>
 		</div><!--/row-->
 		
@@ -47,18 +50,22 @@
 		</div><!--/row-->
 		
 		<div class="row">
-			<div class="col-xs-12 col-sm-push-7 col-sm-5 col-md-push-8 col-md-4">
-				<button type="button" class="btn btn-primary search-toggle" data-toggle="collapse" data-target="#collapsed-search">
-						<span>Search</span>
-						<i class="fa fa-search"></i>
-				</button>
+			<div class="col-xs-12 col-sm-7 col-md-8">
+				<h1>South Strand News</h1>
+				<h5>Georgetown Times | Waccamaw Times | Inlet Outlook</h5>
+			</div>
+			<div class="col-xs-12 col-sm-5 col-md-4 cust-search-area">
 				<div class="collapse search-collapse" id="collapsed-search">
 					<form role="form" class="form-inline">
 						<div class="form-group">
 							<label class="sr-only" for="header-search">Search</label>
-							<input type="search" class="form-control" id="header-search" placeholder="Search">
+							<div class="input-group">
+								<input type="text" class="form-control" id="header-search" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="submit">Go <i class="fa fa-angle-double-right"></i></button>
+								</span>
+							</div>
 						</div>
-						<button type="submit" class="btn btn-primary">Search</button>
 					</form>
 					<div class="panel panel-default">
 						<div class="ad-placeholder panel-body">
@@ -67,27 +74,29 @@
 					</div>
 				</div><!--/collapse-->
 			</div>
-			<div class="col-xs-12 col-sm-pull-5 col-sm-7 col-md-pull-4 col-md-8">
-				<h1>South Strand News</h1>
-				<h5>Georgetown Times | Waccamaw Times | Inlet Outlook</h5>
-			</div>
+			
 		</div><!--/row-->
 		
 		<div class="row">
 			<div class="col-xs-12">
 				<nav class="navbar navbar-default" role="navigation">
-					<ul class="nav navbar-nav cust-main-nav-links">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">News</a></li>
-						<li><a href="#">Sports</a></li>
-						<li><a href="#">Opinion</a></li>
-						<li><a href="#">Obits</a></li>
-					</ul>
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#more-navbar-links">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sections-navbar-links">
 						<i class="fa fa-bars"></i>
-						<span>More Options</span>
+						<span>Menu</span>
 					</button>
-					<div class="collapse navbar-collapse" id="more-navbar-links">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsed-search">
+						<i class="fa fa-search"></i>
+						<span>Search</span>
+					</button>
+					<div class="collapse navbar-collapse" id="sections-navbar-links">
+						<ul class="nav navbar-nav cust-main-nav-links">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Opinion</a></li>
+							<li><a href="#">Obits</a></li>
+						</ul>
+						
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#">Advertise</a></li>
 							<li><a href="#">Automobiles</a></li>
