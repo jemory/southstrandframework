@@ -5437,6 +5437,22 @@ td.visible-print {
 .cust-search-area form {
   margin: 5px 0px;
 }
+.article-title-block {
+  border-bottom: 1px solid #bdc3c7;
+  margin-bottom: 25px;
+}
+.article-lead-image-block {
+  background-color: #ecf0f1;
+  border-bottom: 1px solid #bdc3c7;
+  margin-bottom: 10px;
+}
+.img-caption {
+  padding: 10px 15px;
+  margin-bottom: 0;
+}
+.inline-image-article {
+  margin-right: 25px;
+}
 .leaderboard {
   width: 728px;
   height: 90px;
