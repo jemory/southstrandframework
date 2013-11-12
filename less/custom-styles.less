@@ -27,7 +27,11 @@
 .article-lead-image-block {
 	background-color: @clouds;
 	border-bottom: 1px solid @silver;
-	margin-bottom: 10px;
+	margin: auto -15px 15px -15px;
+	
+	@media (min-width: @screen-sm-min) {
+		margin: auto auto 15px auto;
+	}
 }
 
 .byline {
@@ -43,6 +47,11 @@
 
 .pub-date p {
 	margin: 0;
+}
+
+.pub-date li {
+	padding-left: 0;
+	padding-right: 15px;
 }
 
 .pub-date .label {
@@ -141,7 +150,7 @@
 
 @media (min-width: @screen-sm-min) {
 	.main-cont .cust-col-main {
-	width: (@screen-sm - 360);
+	width: (@screen-sm - 350);
 	}
 	
 	.main-cont .cust-col-sidebar {
@@ -151,7 +160,7 @@
 
 @media (min-width: @screen-md-min) {
 	.main-cont .cust-col-main {
-	width: (@screen-md - 360);
+	width: (@screen-md - 355);
 	}
 	
 	.main-cont .cust-col-sidebar {
@@ -161,7 +170,7 @@
 
 @media (min-width: @screen-lg-min) {
 	.main-cont .cust-col-main {
-	width: (@screen-lg - 360);
+	width: (@screen-lg - 380);
 	}
 	
 	.main-cont .cust-col-sidebar {

@@ -5443,7 +5443,12 @@ td.visible-print {
 .article-lead-image-block {
   background-color: #ecf0f1;
   border-bottom: 1px solid #bdc3c7;
-  margin-bottom: 10px;
+  margin: auto -15px 15px -15px;
+}
+@media (min-width: 768px) {
+  .article-lead-image-block {
+    margin: auto auto 15px auto;
+  }
 }
 .byline {
   padding-bottom: 15px;
@@ -5456,6 +5461,10 @@ td.visible-print {
 }
 .pub-date p {
   margin: 0;
+}
+.pub-date li {
+  padding-left: 0;
+  padding-right: 15px;
 }
 .pub-date .label {
   font-size: 85%;
@@ -5528,7 +5537,7 @@ td.visible-print {
 }
 @media (min-width: 768px) {
   .main-cont .cust-col-main {
-    width: 408px;
+    width: 418px;
   }
   .main-cont .cust-col-sidebar {
     width: 330px;
@@ -5536,7 +5545,7 @@ td.visible-print {
 }
 @media (min-width: 992px) {
   .main-cont .cust-col-main {
-    width: 632px;
+    width: 637px;
   }
   .main-cont .cust-col-sidebar {
     width: 330px;
@@ -5544,7 +5553,7 @@ td.visible-print {
 }
 @media (min-width: 1220px) {
   .main-cont .cust-col-main {
-    width: 860px;
+    width: 840px;
   }
   .main-cont .cust-col-sidebar {
     width: 330px;
